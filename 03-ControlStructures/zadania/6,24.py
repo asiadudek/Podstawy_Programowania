@@ -1,4 +1,4 @@
-
+#Program tworzy wzor
 
 
 for i in range(1,6): #petla wykona nam sie 5 razy

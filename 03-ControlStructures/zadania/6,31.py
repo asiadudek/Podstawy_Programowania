@@ -1,4 +1,4 @@
-
+#Program wyswietla nam 20 losowych liczb w zakresie od 5 do 10
 import random
 
 for i in range(20):
