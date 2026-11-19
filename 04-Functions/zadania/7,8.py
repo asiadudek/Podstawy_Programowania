@@ -20,8 +20,5 @@ def how_many(amount_to_pay):
     return coin_5 + coin_2 + coin_1
 
 amount_to_pay = int(input("Enter amount to pay: "))
-coin_5 = 0
-coin_2 = 0
-coin_1 = 0
 
 print("Coins needed to pay:",how_many(amount_to_pay))

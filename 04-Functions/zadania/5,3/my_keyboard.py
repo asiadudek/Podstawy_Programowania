@@ -1,6 +1,6 @@
 ###
 # Functions to read any data type from the keyboard
-#
+#Umozliwia odczyt roznych typow danych
 
 def input_string(message): #funkcja zwraca ciag znakow wprowadzonych z klawiatury
     value = input(message)
