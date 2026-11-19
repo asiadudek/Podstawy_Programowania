@@ -19,5 +19,5 @@ for i in range(4):
     pen.right(90)
 
 # Hide the turtle and finish
-pen.hideturtle() #dlugosc boku kwadratu i trojkata
+pen.hideturtle() #chowamy nasz pisak czyli zolwia
 window.mainloop() #okno pozostaje otwarte dopoki go sami nie zamkniemy
