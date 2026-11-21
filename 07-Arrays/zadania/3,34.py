@@ -1,5 +1,7 @@
 #utwórz funkcję, która drukuje tablicę 2 D w wierszach i kolumnach. 
 #Na koniec utwórz program, który drukuje trzy macierze tożsamości o wymiarach 3, 5 i 8
+#macierz jednostkowa o podanych wymiarach
+
 def identity_matrix(n): #macierz kwadratowa, n - liczba kolumn i wierszy
     result = [] #nasza macierz
     for i in range(n): #i to numer wiersza, jeden obrot = 1 wiersz

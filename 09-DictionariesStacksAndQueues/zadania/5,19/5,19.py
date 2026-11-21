@@ -11,8 +11,8 @@ import json #modul do odczytywania i zapisu plikow json
 
 def load_reservations(filename): #Funkcja wczytuje plik i zwraca liste rezerwacji
     with open(filename, 'r', encoding='UTF-8') as file:
-        data = json.load(file) #wczytuje sie zawartosc pliku
-    return data['reservations'] # zwraca tylko listę pod kluczem "reservations" (lista słowników)
+        data = json.load(file) 
+    return data['reservations'] 
 
 
 def count_rooms(data):
@@ -23,7 +23,7 @@ def count_rooms(data):
     return len(rooms) #liczba różnych pokoi = długość listy
 
 
-def count_paid(data): #Funkcja liczy rezerwacje opłacone
+def count_paid(data): 
     count = 0 #licznik rezerwacji oplaconych, narazie jest 0
     for reservation in data:
         if reservation['paid'] == True: #jesli pole paid jest true to zwiekszamy licznik
@@ -55,7 +55,7 @@ def value_unpaid(data):
     return total
 
 
-data = load_reservations('reservations.json') # data - lista rezerwacji wczytana z pliku (przekazujemy ją do każdej funkcji)
+data = load_reservations('reservations.json') 
 
 print("Liczba pokoi:", count_rooms(data))
 print("Liczba opłaconych rezerwacji:", count_paid(data))

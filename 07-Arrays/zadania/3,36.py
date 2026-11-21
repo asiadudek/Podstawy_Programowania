@@ -12,8 +12,8 @@ def change(m):
             result = result + [value] #dodajemy aktualną wartość do naszej nowej tablicy
     return result #zwraca nasza nowa tablice
 
-def print_matrix(l): #lista 1D do wypisania powstala w funkcji wyzej
-    for value in l: #przechodzimy po każdej wartości
+def print_matrix(m): #lista 1D do wypisania powstala w funkcji wyzej
+    for value in m: #przechodzimy po każdej wartości
         print(value, end=" ") #wyswietlamy kazda wartosc w jednej linii
     print()
 

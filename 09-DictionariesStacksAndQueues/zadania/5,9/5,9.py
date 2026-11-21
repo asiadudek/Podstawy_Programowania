@@ -1,15 +1,10 @@
 # Napisz program, który oblicza i drukuje, ile zarejestrowanych samochodów pochodzi z każdej prowincji Polski.
 #Wykaz prowincji i odpowiadające im pierwsze litery numerów rejestracyjnych pojazdów znajdują się w aktach province.csv
+
 import csv
-import os #modul ktory sluzy do pracy z folderami, sciezkami
-
-# Ustawiamy folder roboczy na folder, w którym leży skrypt.
-# __file__ = ścieżka skryptu, abspath = pełna ścieżka, dirname = sam folder (bez nazwy pliku),
-# chdir = ustawia ten folder jako roboczy.
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
-provinces = {} #litera tablicy -> nazwa prowincji
+provinces = {} #litera tablicy -> nazwa wojewodztw
 counts = {}  #litera tablicy -> liczba samochodów
 
 with open('province.csv', 'r', encoding = "UTF-8") as file:

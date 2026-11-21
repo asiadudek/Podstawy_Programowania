@@ -1,5 +1,7 @@
 #Utwórz funkcję transpose_matrix(m) zwracającą transponowaną macierz m
 #Następnie utwórz program, który drukuje transponowane macierze w wierszach i kolumnach dla następujących macierzy.
+
+
 def transpose_matrix(m):
     result = [] #nasz pusta lista, tutaj będzie macierz transponowana
     for j in range(len(m[0])): # m[0] to pierwszy wiersz macierzy a jego dlugosc to liczba kolumn, wszystkie wiersze maja tyle samo elementow wiec wystarczy jak zmierzymy jeden

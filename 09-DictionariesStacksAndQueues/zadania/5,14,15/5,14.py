@@ -11,6 +11,7 @@ while True: #petla bedzie sie wykonywac dopoki uzytkownik nie wybierze 3
     print("1. New customer")
     print("2. Serve next customer")
     print("3. Exit")
+    
     choice = input("Choose option: ")
 
     if choice == "1": #nowy klient  

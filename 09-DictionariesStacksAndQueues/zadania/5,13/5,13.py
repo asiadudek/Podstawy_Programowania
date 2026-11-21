@@ -1,4 +1,3 @@
-#Napisz program, który oblicza wyrażenia RPN.
 #Jeśli wprowadzona wartość jest liczbą, wciśnij liczbę na stos
 #Jeśli wprowadzona wartość jest operatorem, wyjmij dwa elementy z górnej części stosu, wykonaj obliczenia i prześlij wynik operacji na stos.
 #Jeśli wprowadzona wartość jest znakiem równości, wyjmij wynik końcowy ze stosu i wyświetl wynik obliczeń.

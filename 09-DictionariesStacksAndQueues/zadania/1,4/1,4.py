@@ -14,7 +14,7 @@ person['surname'] = 'Nowak'
 person['married'] = False
 person ['gender'] = "Male"
 person['hobby'].append('bicycle')
-person['phone']['work'] = '313131444'
+person['phone']['work'] = '313131444' #zagnieżdzony slownik
 print(person)
 
 for key,value in person.items():

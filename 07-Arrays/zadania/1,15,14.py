@@ -8,10 +8,8 @@ bank_transactions = [-150, -20, 300, -45, -60, 500, -120]
 def bubble_sort(arr):
     n = len(arr) #ilosc elementow listy
     for i in range(n):#numer rundy, petla wykona sie tyle razy ile tablica zawiera elementow. i mowi ktory raz petla sie wykonuje
-      for j in range(n-i-1): #pozycja sasiadujacych liczb, na ktorym miejscu jestesmy
-        if arr[j] > arr[j+1]:
-            arr[j], arr[j+1] = arr[j+1], arr[j]
-
+      for j in range(n-i-1): #w nawiasie mamy liczbe par, ktora musimy jeszcze porownac, -1 apobiega wyjsciu poza liste
+            arr[j], arr[j+1] = arr[j+1], arr[j] #i to najwieksza z posortowanych liczb, odejmujemy zeby jej nie sprawdzac znowu
     return arr
 
 car_fuel_consumption = [7.2, 6.8, 7.5, 7.0, 7.1, 6.9, 7.3]

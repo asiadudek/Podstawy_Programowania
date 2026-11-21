@@ -8,5 +8,7 @@ mobile = {
 "Model": "15 pro",
 "dual_sim": True 
 }
+
 for key,value in mobile.items():
    print(f"{key} : {value}")
+

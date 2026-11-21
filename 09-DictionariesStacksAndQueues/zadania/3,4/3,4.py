@@ -4,8 +4,8 @@ number = int(input("Enter number: "))
 stack = [] #puste miejsce na stosie, miejsce na reszty z dzielenia
 
 while number > 0: #dopoki liczba jest wieksza od 0
-    remainder = number % 2
-    stack.append(remainder) #kladziemy reszte z dzielenia na stos
+    rest = number % 2
+    stack.append(rest) #kladziemy reszte z dzielenia na stos
     number = number // 2 #dzielenie calkowite, liczba maleje, teraz ona bedzie sprawdzana
 
 total = '' ## tu będzie wynik jako tekst, na start pusty
