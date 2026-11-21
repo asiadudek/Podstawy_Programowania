@@ -1,10 +1,4 @@
-import os #modul ktory sluzy do pracy z folderami, sciezkami
-
-# Ustawiamy folder roboczy na folder, w którym leży skrypt.
-# __file__ = ścieżka skryptu, abspath = pełna ścieżka, dirname = sam folder (bez nazwy pliku),
-# chdir = ustawia ten folder jako roboczy. Dzięki temu program zawsze znajdzie clothing.csv.
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
-
+#Napisz program, który wyświetla pierwsze pięć wierszy, a następnie drukuje „Naciśnij klawisz Enter...”
 
 with open('it_company.csv', 'r', encoding = "UTF-8") as file:
      content = file.read() #zawartosc pliku

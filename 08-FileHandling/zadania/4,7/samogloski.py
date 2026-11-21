@@ -1,4 +1,5 @@
 #Napisz program, który oblicza liczbę samogłosek w tekście wprowadzanym z klawiatury. Używaj wyrażeń regularnych.
+
 import re #modul wyrazen regularnych, sluzy do szukania za pomoca wzorow w tekscie
 
 text = input("Enter text: ")

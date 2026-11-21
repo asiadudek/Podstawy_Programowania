@@ -7,24 +7,19 @@
 
 
 import re #modul z wyrazeniami regularnymi, sluzy do szukania za pomoca wzorow w tekscie
-import os #modul ktory sluzy do pracy z folderami, sciezkami
 
-# Ustawiamy folder roboczy na folder, w którym leży skrypt.
-# __file__ = ścieżka skryptu, abspath = pełna ścieżka, dirname = sam folder (bez nazwy pliku),
-# chdir = ustawia ten folder jako roboczy. Dzięki temu program zawsze znajdzie clothing.csv.
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 def read_from_file(email):
     with open(email, 'r', encoding = 'UTF-8') as file:
         content = file.read() #zawartosc pliku
     return content
-# From: - dosłowny tekst
-    # .*  - dowolne znaki (np. imię i nazwisko nadawcy)
-    # <( ... )> - adres w nawiasach <>; nawias okrągły to grupa, którą findall zwraca
-    # [\w.]+ - część przed @ (litery, cyfry, _ i kropki)
-    # @   - dosłowny znak @
-    # [\w]+\. - nazwa domeny i kropka
-    # [\w.]+  - końcówka domeny (np. com lub co.uk)
+
+# .*  - dowolne znaki (np. imię i nazwisko nadawcy)
+# <( ... )> - adres w nawiasach <>; nawias okrągły to grupa, którą findall zwraca
+# [\w.]+ - część przed @ (litery, cyfry, _ i kropki)
+# @   - dosłowny znak @
+# [\w]+\. - nazwa domeny i kropka
+# [\w.]+  - końcówka domeny (np. com lub co.uk)
 
 def email_sender(email): #zwraca adresata
     pattern = r'From: .*<([\w.]+@[\w]+\.[\w.]+)>'

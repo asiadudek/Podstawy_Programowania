@@ -2,11 +2,7 @@
 #Użyj bloku try-except, aby uniknąć przerwania programu, gdy użytkownik wprowadzi nazwę pliku, która nie istnieje.
 #Wydrukuj wynik obliczeń
 
-import os #modul ktory sluzy do pracy z folderami, sciezkami
-# Ustawiamy folder roboczy na folder, w którym leży skrypt.
-# __file__ = ścieżka skryptu, abspath = pełna ścieżka, dirname = sam folder (bez nazwy pliku),
-# chdir = ustawia ten folder jako roboczy. Dzięki temu program zawsze znajdzie clothing.csv.
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+import csv
 
 file_name = input("Enter file name: ")
 
@@ -21,5 +17,6 @@ try: #próbujemy wykonać kod, który może zgłosić błąd
     print("Number of lines: ",len(lines))
     print("Number of words: ", len(words))
     print("Number of characters: ", characters)
+
 except FileNotFoundError: #wykona się tylko, gdy pliku o takiej nazwie nie ma
     print("File not found.") #komunikat zamiast przerwania programu przez błąd

@@ -1,13 +1,6 @@
 ###
 # Reads the entire contents of a file
 #Wypełnij poniższy program, aby obliczyć całkowitą liczbę zaparkowanych samochodów.
-import os #modul ktory sluzy do pracy z folderami, sciezkami
-
-# Ustawiamy folder roboczy na folder, w którym leży skrypt.
-# __file__ = ścieżka skryptu, abspath = pełna ścieżka, dirname = sam folder (bez nazwy pliku),
-# chdir = ustawia ten folder jako roboczy. Dzięki temu program zawsze znajdzie clothing.csv.
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
-
 
 def read_from_file(name):
    with open(name, 'r') as file:

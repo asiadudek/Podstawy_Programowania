@@ -23,4 +23,4 @@ seven_wonders = sorted(seven_wonders) #sortujemy nasze dane
 # Write data to the file
 with open(file_name, 'w') as file:
       for item in seven_wonders: #przeszukujemy nasza liste
-        file.write(item + '\n') #wypisujemy elementy listy w nowych wierszach i zapisujemy w nowym pliku
+         file.write(item + '\n') 

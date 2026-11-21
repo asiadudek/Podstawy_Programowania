@@ -1,6 +1,12 @@
 ###
 # Checks the correctness of username and password
 #Napisz program, który sprawdza, czy nazwa użytkownika i hasło wprowadzone z klawiatury spełniają poniższe wymagania. Używaj wyrażeń regularnych.
+#nazwa użytkownika ma długość co najmniej 6 znaków
+#nazwa użytkownika zawiera tylko małe litery
+#hasło ma co najmniej 8 znaków
+#hasło zawiera tylko litery (małe i wielkie), cyfry i znak podkreślenia
+
+
 import re
 
 # read username and password from keyboard
@@ -9,19 +15,7 @@ password = input("Enter password: ")
 
 # pattern (criteria) for username and password
 
-# Wzorce (kryteria) dla nazwy użytkownika i hasła
-# r'...' - "surowy" napis, dzięki niemu Python nie psuje znaków specjalnych jak \w
-# ^  - początek tekstu
-# [a-z] - jedna mała litera od a do z
-# {6,}  - poprzedni element ma wystąpić co najmniej 6 razy (bez górnego limitu)
-# $  - koniec tekstu
-# Razem: nazwa składa się WYŁĄCZNIE z małych liter a-z i ma min. 6 znaków
 username_pattern = r'^[a-z]{6,}$'
-
-
-# \w  - dowolna litera, cyfra lub podkreślenie 
-# {8,} - co najmniej 8 takich znaków
-# Razem: hasło składa się WYŁĄCZNIE z liter, cyfr lub _ i ma min. 8 znaków
 password_pattern = r'^\w{8,}$'
 
 # check if username and password are ok
