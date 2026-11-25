@@ -6,20 +6,22 @@ class Book():
         self.pages = pages
         self.current_page = 1
         self.is_open = False
+        self.price = 48
 
-    def open(self):
+    def open(self): #Metoda otwierajaca ksiazke: zmienia is_open na True 
         self.is_open = True
     
-    def close(self):
+    def close(self): #Metoda zamykajaca ksiażke: zmienia is_open na False 
         self.is_open = False
     
-    def change_page(self,page):
+    def change_page(self,page): #Metoda zmieniajaca strone 
         self.current_page = page
 
     def display_info(self):
         print(f"My favourite book is {self.title}.")
         print(f"Written by {self.author}.")
         print(f"This book has {self.pages} pages.")
+        print(f"The price is: {self.price}.")
         if self.is_open:
             print(f"I am just reading the book, page {self.current_page}.")
         else:
@@ -28,9 +30,7 @@ class Book():
 
 def main():
     # object creation based on the Book class
-    favourite_book = Book(
-        "Harry Potter and the Philosopher's Stone",
-        "J. K. Rowling", 223)
+    favourite_book = Book("Harry Potter and the Philosopher's Stone", "J. K. Rowling", 223)
 
     # object manipulation
     favourite_book.open()
