@@ -31,5 +31,5 @@ def main():
     print(f'{student2.name}, {student2.age} years old, city: {student2.city}')
     print(f'{student3.name}, {student3.age} years old, city: {student3.city}')
 
-if __name__ == "__main__":
+if __name__ == "__main__": #ten warunek sprawdza czy plik zostal uruchomiony bezposrednio, jesli tak to sie uruchamia
     main()

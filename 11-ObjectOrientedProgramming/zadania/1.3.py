@@ -1,8 +1,8 @@
 class TaxiRide:
     def __init__(self, rate_per_km):
-        self.rate_per_km = rate_per_km # value in € (e.g. €2)
+        self.rate_per_km = rate_per_km #stawka za 1km
         self.distance = 0
-        self.fare = 0
+        self.fare = 0 #oplata za przejazd
 
     def calculate_fare(self, distance):
         self.distance = distance
